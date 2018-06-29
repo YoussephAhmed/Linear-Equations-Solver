@@ -337,15 +337,15 @@ int find_name(string name)
 
 }
 
-
-
 void delete_name(string name)
-{
-        for(auto it = vars.begin() ; it != vars.end() ; it++)
-        if( it->name == name )
-            vars.erase(it);
-
-}
+	{
+		for (auto it = vars.begin(); it != vars.end(); it++)
+			if (it->name == name)
+			{
+				vars.erase(it);
+				return;
+			}
+	}
 
 
 
